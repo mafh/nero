@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+//= partials/head.html
+<body>
+	<script>
+		document.body.className += ' js';
+	</script>
+	<div class="page-wrap">
+
+		//= partials/header-inner.html
+
+		<div class="content-title-block">
+			<img src="userimg/title-1.jpg" alt="">
+			<div class="backnav backnav--white">
+				<ul>
+					<li><a href="#">Nero</a></li>
+					<li><a href="#">Регистрация</a></li>
+				</ul>
+			</div>
+			<h1>Регистрация</h1>
+		</div>
+
+		<noscript>
+			<div class="usercontent">
+				<h3>Для регистрации необходимо сключить javascript в вашем браузере.</h3>
+			</div>
+		</noscript>
+
+		<section class="wrap form-wrap">
+
+			<div class="usercontent form-loading js-form-loading">
+				<h4 class="align-center">Загрузка…</h4>
+			</div>
+
+			<form action="" class="form js-form">
+
+				<h5 class="align-center">Дополнительный заголовок</h5>
+
+				<div class="form-step" style="display: none;">
+
+					<div class="form-row flex-row">
+						<label class="col-xs">
+							<div class="input">
+								<span class="input-label">Обязательный input<sup>*</sup></span>
+								<div class="input-in">
+									<input type="text" placeholder=""
+										required
+										data-parsley-required>
+									<span class="focus-border"></span>
+									<span class="input-note">Например, текст</span>
+								</div>
+							</div>
+						</label>
+					</div>
+
+					<div class="form-row flex-row">
+						<label class="col-xs">
+							<div class="input">
+								<span class="input-label">Необязательный input</span>
+								<div class="input-in">
+									<input type="text" placeholder="">
+									<span class="focus-border"></span>
+									<span class="input-note">Например, пустота</span>
+								</div>
+							</div>
+						</label>
+					</div>
+
+					<div class="form-row flex-row">
+						<div class="col-xs">
+							<div class="input">
+								<span class="input-label">Обязательный select<sup>*</sup></span>
+								<select name="" id="" data-select
+										required
+										data-parsley-required>
+									<option value="">Выберите страну</option>
+									<option value="Беларусь">БЕЛАРУСЬ</option>
+									<option value="Россия">РОССИЯ</option>
+									<option value="Украина">УКРАИНА</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-row flex-row">
+						<div class="col-xs">
+							<div class="input">
+								<span class="input-label">Услуги (выбрать из списка)<sup>*</sup></span>
+								<select data-multiple multiple>
+									<option value="" placeholder>Выберите страну</option>
+									<option value="Проектирование">Проектирование</option>
+									<option value="Дизайн">Дизайн</option>
+									<option value="Фронтенд">Фронтенд</option>
+									<option value="Бекенд">Бекенд</option>
+									<option value="Наполнение контентом">Наполнение контентом</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-row flex-row">
+						<label class="col-xs">
+							<div class="input">
+								<span class="input-label">Пароль<sup>*</sup></span>
+								<div class="input-in">
+									<input type="password" placeholder="" autocomplete="off" id="reg_pwd_1" required data-parsley-required data-parsley-min-length="6">
+									<span class="focus-border"></span>
+									<span class="input-note"></span>
+								</div>
+							</div>
+						</label>
+					</div>
+
+					<div class="form-row flex-row">
+						<label class="col-xs">
+							<div class="input">
+								<span class="input-label">Повторите пароль<sup>*</sup></span>
+								<div class="input-in">
+									<input type="password" placeholder="" autocomplete="off" id="reg_pwd_2" required data-parsley-required data-parsley-equalto="#reg_pwd_1">
+									<span class="focus-border"></span>
+									<span class="input-note"></span>
+								</div>
+							</div>
+						</label>
+					</div>
+				</div>
+
+				<div class="form-navigation">
+					<div class="form-row flex-row">
+						<div class="col-xs-6 col-sm start-xs js-prev">
+							<button class="button button--black button--big button--arrow-back"><span>Назад</span></button>
+						</div>
+						<div class="col-xs-6 col-sm end-xs js-next">
+							<button class="button button--bgred button--big button--arrow"><span>Далее</span></button>
+						</div>
+						<div class="col-xs-6 col-sm end-xs js-submit">
+							<input type="submit" class="button button--bgred button--big" value="Готово">
+						</div>
+					</div>
+				</div>
+
+			</form>
+
+			<div class="reg-form js-form-success" style="display: none;">
+				<div class="usercontent">
+					<h2>Спасибо!</h2>
+				</div>
+			</div>
+
+			<div class="reg-form js-form-error" style="display: none;">
+				<div class="usercontent">
+					<h2>О нет!</h2>
+					<p>Что-то пошло не так.</p>
+				</div>
+			</div>
+
+		</section>
+
+	</div>
+
+	//= partials/footer-inner.html
+
+	//= partials/sidebar.html
+
+	//= partials/popup.html
+
+	//= partials/scripts.html
+</body>
+</html>

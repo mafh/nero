@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+//= partials/head.html
+<body>
+	<script>
+		document.body.className += ' js';
+	</script>
+	<div class="page-wrap">
+
+		//= partials/header-inner.html
+
+		<div class="content-title-block">
+			<img src="userimg/title-1.jpg" alt="">
+			<div class="backnav backnav--white">
+				<ul>
+					<li><a href="#">Nero</a></li>
+					<li><a href="#">Личные данные</a></li>
+				</ul>
+			</div>
+			<h1>Личные данные</h1>
+		</div>
+
+		<div class="tabs-row tabs-row--border">
+			<a href="personal-basket.html" class="tabs-item--active">
+				<span>Корзина</span>
+			</a>
+			<a href="personal-history.html">
+				<span>История заказов</span>
+			</a>
+			<a href="personal-data.html">
+				<span>Личные данные</span>
+			</a>
+		</div>
+
+		<div class="maxwrap">
+
+			<form action="" class="usercontent personal-basket js-personal-basket">
+				<div class="personal-basket-header">
+					<div class="flex-row flex-row-padding">
+						<div class="col-xs-6">
+							<div class="personal-basket-title">
+								Товаров в заказе: <span class="js-basket-products-count">3</span>
+							</div>
+						</div>
+						<div class="col-xs-6 end-xs">
+							<a href="#basket-cleanup" class="basket-cleanup js-basket-cleanup">
+								<span>Очистить корзину</span>
+								<svg class="ico-close" viewBox="0 0 32 32">
+									<use xlink:href="#ico-close"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="basket">
+					<div class="basket-head bg--white">
+						<div class="b-head-node">Наименование</div>
+						<div class="b-head-node">Цвет</div>
+						<div class="b-head-node">Цена</div>
+						<div class="b-head-node">Кол-во</div>
+						<div class="b-head-node">Сумма</div>
+						<div class="b-head-node"></div>
+					</div>
+					<div class="basket-body bg--white">
+						<div class="basket-item js-basket-product" id="1">
+							<div class="b-item-node">
+								<a href="#" class="basket-device">
+									<div class="basket-device-img">
+										<img class="lozad" data-src="userimg/device-1.png" alt="">
+									</div>
+									<div class="basket-device-txt">
+										<div class="basket-device-title">Исполнительное устройство Logo 8213-1000 с СК</div>
+										<div class="basket-device-status is-available">
+											<span>В наличии</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="b-item-node">
+								<div class="device-color" style="background-color: #000;"></div>
+							</div>
+							<div class="b-item-node">
+								<div class="basket-item-price">
+									<span class="js-basket-product-price" data-price="350">350</span>
+									<sup>руб.</sup>
+								</div>
+								<div class="basket-item-price-old">
+									<span>399</span>
+									<sup>руб.</sup>
+								</div>
+							</div>
+							<div class="b-item-node">
+								<div class="c-number-input c-number-input__sm">
+									<span class="c-number-input c-number-input__sm">
+										<input type="number" value="2" class="js-number-input c-number-input_real">
+										<button data-delta="-1" class="c-number-input_btn c-number-input_btn__prev" type="button"></button>
+										<button data-delta="1" class="c-number-input_btn c-number-input_btn__next" type="button"></button>
+									</span>
+								</div>
+							</div>
+							<div class="b-item-node">
+								<div class="basket-item-price">
+									<span class="js-basket-product-sum">---</span>
+									<sup>руб.</sup>
+								</div>
+							</div>
+							<div class="b-item-node">
+								<div class="basket-item-remove js-basket-product-remove">
+									<svg class="ico-close" viewBox="0 0 32 32">
+										<use xlink:href="#ico-close"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						<div class="basket-item js-basket-product" id="2">
+							<div class="b-item-node">
+								<a href="#" class="basket-device">
+									<div class="basket-device-img">
+										<img class="lozad" data-src="userimg/product-3.jpg" alt="">
+									</div>
+									<div class="basket-device-txt">
+										<div class="basket-device-title">Исполнительное устройство Logo 8213-1000 с СК</div>
+										<div class="basket-device-status is-pending">Под заказ</div>
+									</div>
+								</a>
+							</div>
+							<div class="b-item-node">
+								<div class="device-color" style="background-color: #c3143c;"></div>
+							</div>
+							<div class="b-item-node">
+								<div class="basket-item-price">
+									<span class="js-basket-product-price" data-price="300">300</span>
+									<sup>руб.</sup>
+								</div>
+								<div class="basket-item-price-old">
+									<span>399</span>
+									<sup>руб.</sup>
+								</div>
+							</div>
+							<div class="b-item-node">
+								<div class="c-number-input c-number-input__sm">
+									<span class="c-number-input c-number-input__sm">
+										<input type="number" value="1" class="js-number-input c-number-input_real">
+										<button data-delta="-1" class="c-number-input_btn c-number-input_btn__prev" type="button"></button>
+										<button data-delta="1" class="c-number-input_btn c-number-input_btn__next" type="button"></button>
+									</span>
+								</div>
+							</div>
+							<div class="b-item-node">
+								<div class="basket-item-price">
+									<span class="js-basket-product-sum">---</span>
+									<sup>руб.</sup>
+								</div>
+							</div>
+							<div class="b-item-node">
+								<div class="basket-item-remove js-basket-product-remove">
+									<svg class="ico-close" viewBox="0 0 32 32">
+										<use xlink:href="#ico-close"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						<div class="basket-item js-basket-product" id="3">
+							<div class="b-item-node">
+								<a href="#" class="basket-device">
+									<div class="basket-device-img">
+										<img class="lozad" data-src="userimg/comand4.png" alt="">
+									</div>
+									<div class="basket-device-txt">
+										<div class="basket-device-title">Исполнительное устройство Logo 8213-1000 с СК</div>
+										<div class="basket-device-status is-pending">Под заказ</div>
+									</div>
+								</a>
+							</div>
+							<div class="b-item-node">
+								<div class="device-color" style="background-color: #c3143c;"></div>
+							</div>
+							<div class="b-item-node">
+								<div class="basket-item-price">
+									<span class="js-basket-product-price" data-price="400">400</span>
+									<sup>руб.</sup>
+								</div>
+								<div class="basket-item-price-old">
+									<span>399</span>
+									<sup>руб.</sup>
+								</div>
+							</div>
+							<div class="b-item-node">
+								<div class="c-number-input c-number-input__sm">
+									<span class="c-number-input c-number-input__sm">
+										<input type="number" value="1" class="js-number-input c-number-input_real" id="asd3">
+										<button data-delta="-1" class="c-number-input_btn c-number-input_btn__prev" type="button"></button>
+										<button data-delta="1" class="c-number-input_btn c-number-input_btn__next" type="button"></button>
+									</span>
+								</div>
+							</div>
+							<div class="b-item-node">
+								<div class="basket-item-price">
+									<span class="js-basket-product-sum">---</span>
+									<sup>руб.</sup>
+								</div>
+							</div>
+							<div class="b-item-node">
+								<div class="basket-item-remove js-basket-product-remove">
+									<svg class="ico-close" viewBox="0 0 32 32">
+										<use xlink:href="#ico-close"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="basket-foot">
+						<div class="flex-row flex-row-padding">
+							<div class="col-xs-4">
+								<div class="basket-discount bg--white">
+									<div class="personal-item personal-info-header">
+										Ваша скидка
+									</div>
+									<div class="personal-item">
+										<label class="personal-label label-off">Базовая:</label>
+										<div class="personal-input"><span class="bg--red outline--red" data-discound-base="5%">5%</span></div>
+									</div>
+									<div class="personal-item">
+										<label class="personal-label label-off">Накопительная:</label>
+										<div class="personal-input"><span class="bg--red outline--red" data-discound-custom="7%">7%</span></div>
+									</div>
+									<input type="hidden" class="js-basket-discount-value" value="7">
+								</div>
+							</div>
+							<div class="col-xs-4">
+								<div class="device-delivery basket-device-delivery">
+									<div class="ico-delivery">
+										<svg viewBox="0 0 540 540"><use xlink:href="#ico-delivery"></use></svg>
+									</div>
+									<span><b>Бесплатная доставка</b> по Минску и району, по РБ при заказе от 1000 рублей.  Срок 1–5 дней. Самовывоз из Минска, курьер, EMS.</span>
+								</div>
+							</div>
+							<div class="col-xs-4 end-xs">
+								<div class="basket-summary">
+									<div class="b-summary-node">
+										<span>Сумма без скидки:</span>
+										<div class="basket-item-price">
+											<span class="js-basket-price">---</span>
+											<sup>руб.</sup>
+										</div>
+									</div>
+									<div class="b-summary-node">
+										<span>Cкидка:</span>
+										<div class="basket-item-price">
+											<span class="js-basket-discount">---</span>
+											<sup>руб.</sup>
+										</div>
+									</div>
+									<div class="b-summary-node b-summary-result">
+										<span>Итого:</span>
+										<div class="basket-item-price basket-item-price--big">
+											<span class="js-total">---</span>
+											<input type="hidden" class="js-input-total" value="---">
+											<sup>руб.</sup>
+										</div>
+									</div>
+									<div class="b-summary-node">
+										<button class="button button--big button--bgred">Оформить заказ</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+
+			<div class="usercontent bg--white basket-is-empty js-basket-is-empty" style="display: none;">
+				<div class="wrap wrap-content">
+					<h2 class="align-center">Корзина пуста</h2>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	//= partials/footer-inner.html
+
+	//= partials/sidebar.html
+
+	//= partials/popup.html
+
+	//= partials/scripts.html
+</body>
+</html>

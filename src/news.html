@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+//= partials/head.html
+<body>
+	<script>
+		document.body.className += ' js';
+	</script>
+	<div class="page-wrap">
+
+		<div class="sticky-bounds">
+
+			//= partials/header-inner.html
+
+			<div class="content-title-block">
+				<img src="userimg/title-1.jpg" alt="">
+				<div class="backnav backnav--white">
+					<ul>
+						<li><a href="#">Nero</a></li>
+						<li><a href="#">Новости</a></li>
+					</ul>
+				</div>
+				<h1>Новости</h1>
+			</div>
+
+		</div>
+
+
+
+		<div class="newslist">
+
+			<div class="filter">
+
+				<div class="filter-row">
+
+					<div class="filter-wrap">
+
+						<div class="filter-selects">
+
+							<div class="filter-node">
+								<label class="filter-label">Год публикации:</label>
+								<div class="filter-ctrl">
+									<select data-select>
+										<option value="all">Все</option>
+										<option value="2018">2018</option>
+										<option value="2017">2017</option>
+										<option value="2016">2016</option>
+										<option value="2015">2015</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="filter-node">
+								<label class="filter-label">Тип новостей:</label>
+								<div class="filter-ctrl">
+									<select data-select>
+										<option value="all">Все</option>
+										<option value="Новости">Новости</option>
+									</select>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="maxwrap usercontent">
+
+				<a href="news-item.html" class="news-item">
+					<div class="flex-row">
+						<div class="col-xs-12 col-sm-6 n-image">
+							<img src="https://picsum.photos/700/500?random" alt="">
+						</div>
+						<div class="col-xs-12 col-sm-6 n-abstract">
+							<div class="n-date">17/12</div>
+							<div class="n-title">Открыта запись на обучающие семинары в г. Москва.</div>
+							<p>Представительство Nero Electronics, компания "СкетчНероГрупп", приглашает посетить бесплатные обучающие семинары в городе Москва.</p>
+						</div>
+					</div>
+				</a>
+
+				<a href="news-item.html" class="news-item">
+					<div class="flex-row">
+						<div class="col-xs-12 col-sm-6 n-image">
+							<img src="https://picsum.photos/600/500?random" alt="">
+						</div>
+						<div class="col-xs-12 col-sm-6 n-abstract">
+							<div class="n-date">17/12</div>
+							<div class="n-title">Новый фирменный стиль от студии Артемия Лебедева – платформа для современных коммуникаций</div>
+							<p>Студия Артемия Лебедева разработала для нас новый фирменный стиль. Мы были уверены, что акцент будет сделан на главное, все лишнее останется в истории, и мы не ошиблись.</p>
+						</div>
+					</div>
+				</a>
+
+				<div class="pagination">
+					<div class="pagination-row">
+						<div class="pagination-nav">
+							<a href="#" class="c-ico ico-50 ico--red">
+								<svg viewBox="0 0 50 50">
+									<use xlink:href="#ico-left"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="pagination-list">
+							<a href="#" class="active">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<span>…</span>
+							<a href="#">985</a>
+						</div>
+						<div class="pagination-nav">
+							<a href="#" class="c-ico ico-50 ico--red">
+								<svg viewBox="0 0 50 50">
+									<use xlink:href="#ico-right"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+	</div>
+
+	//= partials/footer-inner.html
+
+	//= partials/sidebar.html
+
+	//= partials/popup.html
+
+	//= partials/scripts.html
+</body>
+</html>

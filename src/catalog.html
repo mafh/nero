@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+//= partials/head.html
+<body>
+	<script>
+		document.body.className += ' js';
+	</script>
+	<div class="page-wrap">
+
+		<div class="sticky-bounds">
+
+			//= partials/header-inner.html
+
+			<div class="content-title-block">
+				<img src="userimg/title-1.jpg" alt="">
+				<div class="backnav backnav--white">
+					<ul>
+						<li><a href="#">Nero</a></li>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Управление с радиопультов</a></li>
+					</ul>
+				</div>
+				<h1>Управление с радиопультов</h1>
+			</div>
+
+		</div>
+
+
+		<div class="sticky-bounds">
+
+			//= partials/catalog-filter.html
+
+			<div class="catalog flex-row js-ajax-content" id="catalog-ajax">
+				<div class="catalog-col col-xs-12 col-sm-6 col-lg-4">
+					<div class="product js-product" data-json='[{"image": "userimg/pult1.png", "color": "#fff", "url" : "url-fff", "button": "url-fff", "price": "300"}, {"image": "userimg/pult2.png", "color": "#000", "url" : "url-000", "button": "url-000", "price": "299"}]'>
+						<a href="./catalog-item.html" class="product-img json-url">
+							<img src="i/preloader.svg" class="product-img-preloader js-preloader">
+							<img src="i/preloader.svg" data-src="i/userimg/pult1.png" alt="" class="json-image">
+						</a>
+						<div class="product-descr">
+							<a href="./catalog-item.html" class="product-title json-url">Настенный пульт Oledo 7505-2</a>
+							<div class="product-full">
+								<p>Пульт для управления любыми двумя умными объектами, группами объектов или сценариями. Подходит для использования вместо двухклавишного или одноклавишного выключателя для управления умным светом.</p>
+							</div>
+						</div>
+						<div class="product-footer">
+							<div class="product-footer-row">
+								<div class="product-touch js-product-touch"></div>
+								<div class="product-price">
+									<span class="json-price">300</span>
+									<sup>руб.</sup>
+								</div>
+							</div>
+							<div class="product-footer-row">
+								<object>
+									<a href="#" class="button button--bgred button-buy json-button">
+										<svg class="ico-basket" viewBox="0 0 389.5 355.8"><use xlink:href="#ico-basket"></use></svg>
+										<span>В корзину</span>
+									</a>
+								</object>
+							</div>
+						</div>
+						<div class="product-aside">
+							<ul class="product-icons">
+								<li class="product-icon">
+									<small class="color--red">Intro II</small>
+								</li>
+								<li class="product-icon">
+									<i class="product-icon">
+										<svg viewBox="0 0 24 24"><use xlink:href="#ico-sound"></use></svg>
+									</i>
+								</li>
+								<li class="product-icon">
+									<span><b>3</b></span>
+								</li>
+							</ul>
+						</div>
+						<ul class="product-colors json-colors"></ul>
+					</div>
+				</div>
+				<div class="catalog-col col-xs-12 col-sm-6 col-lg-4">
+					<div class="product js-product" data-json='[{"image": "userimg/pult2.png", "color": "#000", "url" : "url-000", "button": "url-000"}]'>
+						<div class="product-img">
+							<img src="i/preloader.svg" data-preloader="i/preloader.svg" alt="" class="json-image">
+						</div>
+						<div class="product-descr">
+							<a href="#" class="product-title json-url">Настенный пульт Oledo 7505-2</a>
+							<div class="product-full">
+								<p>Пульт для управления любыми двумя умными объектами, группами объектов или сценариями. Подходит для использования вместо двухклавишного или одноклавишного выключателя для управления умным светом.</p>
+							</div>
+						</div>
+						<div class="product-footer">
+							<div class="product-footer-row">
+								<div class="product-touch js-product-touch"></div>
+								<div class="product-price">
+									<span>300</span>
+									<sup>руб.</sup>
+								</div>
+							</div>
+							<div class="product-footer-row">
+								<object>
+									<a href="#" class="button button--bgred button-buy json-button">
+										<svg class="ico-basket" viewBox="0 0 389.5 355.8"><use xlink:href="#ico-basket"></use></svg>
+										<span>В корзину</span>
+									</a>
+								</object>
+							</div>
+						</div>
+						<div class="product-aside">
+							<ul class="product-icons">
+								<li class="product-icon">
+									<small class="color--red">Intro II</small>
+								</li>
+								<li class="product-icon">
+									<i class="product-icon">
+										<svg viewBox="0 0 24 24"><use xlink:href="#ico-sound"></use></svg>
+									</i>
+								</li>
+								<li class="product-icon">
+									<span><b>3</b></span>
+								</li>
+							</ul>
+						</div>
+						<ul class="product-colors json-colors"></ul>
+					</div>
+				</div>
+		</div>
+
+
+
+	</div>
+
+	//= partials/footer-inner.html
+
+	//= partials/sidebar.html
+
+	//= partials/popup.html
+
+	//= partials/scripts.html
+</body>
+</html>

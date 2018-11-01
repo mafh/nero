@@ -1,0 +1,384 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+//= partials/head.html
+<body>
+	<script>
+		document.body.className += ' js';
+	</script>
+	<div class="page-wrap">
+
+		//= partials/header-inner.html
+
+		<div class="content-title-block">
+			<img src="userimg/title-1.jpg" alt="">
+			<div class="backnav backnav--white">
+				<ul>
+					<li><a href="#">Nero</a></li>
+					<li><a href="#">Регистрация</a></li>
+				</ul>
+			</div>
+			<h1>Регистрация</h1>
+		</div>
+
+		<noscript>
+			<div class="usercontent">
+				<h3>Для регистрации необходимо сключить javascript в вашем браузере.</h3>
+			</div>
+		</noscript>
+
+		<section class="maxwrap reg js-reg">
+
+			<header class="reg-steps js-reg-steps" style="display: none;">
+
+				<div class="reg-step reg-step--active">
+					<div class="step-num">
+						<svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+							<circle class="circle" cy="25" cx="25" r="22" stroke-width="3" fill="none"/>
+							<text class="text" xml:space="preserve" text-anchor="start" font-size="16" y="30" x="21" fill-opacity="null" stroke-opacity="null" stroke-width="0" >1</text>
+						</svg>
+					</div>
+					<span class="step-text">Организация</span>
+				</div>
+
+				<div class="reg-step">
+					<div class="step-num">
+						<svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+							<circle class="circle" cy="25" cx="25" r="22" stroke-width="3" fill="none"/>
+							<text class="text" xml:space="preserve" text-anchor="start" font-size="16" y="30" x="20" fill-opacity="null" stroke-opacity="null" stroke-width="0" >2</text>
+						</svg>
+					</div>
+					<span class="step-text">Личные данные</span>
+				</div>
+
+				<div class="reg-step">
+					<div class="step-num">
+						<svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+							<circle class="circle" cy="25" cx="25" r="22" stroke-width="3" fill="none"/>
+							<text class="text" xml:space="preserve" text-anchor="start" font-size="16" y="30" x="20" fill-opacity="null" stroke-opacity="null" stroke-width="0" >3</text>
+						</svg>
+					</div>
+					<span class="step-text">Услуги</span>
+				</div>
+
+				<div class="reg-step">
+					<div class="step-num">
+						<svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+							<circle class="circle" cy="25" cx="25" r="22" stroke-width="3" fill="none"/>
+							<text class="text" xml:space="preserve" text-anchor="start" font-size="16" y="30" x="19" fill-opacity="null" stroke-opacity="null" stroke-width="0" >4</text>
+						</svg>
+					</div>
+					<span class="step-text">Пароль</span>
+				</div>
+
+			</header>
+
+			<div class="usercontent reg-loading js-reg-loading">
+				<h4>Загрузка…</h4>
+			</div>
+
+			<form action="" class="reg-form js-reg-form">
+
+				<div class="reg-form-step" style="display: none;">
+
+					<div class="form-row flex-row">
+						<label class="col-xs">
+							<div class="input">
+								<span class="input-label">Название организации<sup>*</sup></span>
+								<div class="input-in">
+									<input type="text" placeholder=""
+										required
+										data-parsley-required>
+									<span class="focus-border"></span>
+									<span class="input-note"></span>
+								</div>
+							</div>
+						</label>
+					</div>
+
+					<div class="form-row flex-row">
+						<label class="col-xs">
+							<div class="input">
+								<span class="input-label">Детельность организации<sup>*</sup></span>
+								<div class="input-in">
+									<input type="text" placeholder=""
+										required
+										data-parsley-required>
+									<span class="focus-border"></span>
+									<span class="input-note"></span>
+								</div>
+							</div>
+						</label>
+					</div>
+
+					<div class="form-row flex-row">
+						<div class="col-xs">
+							<div class="input">
+								<span class="input-label">Страна<sup>*</sup></span>
+								<select name="" id="" data-select
+										required
+										data-parsley-required>
+									<option value="">Выберите страну</option>
+									<option value="Беларусь">БЕЛАРУСЬ</option>
+									<option value="Россия">РОССИЯ</option>
+									<option value="Украина">УКРАИНА</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-row flex-row">
+						<label class="col-xs">
+							<div class="input">
+								<span class="input-label">Телефон<sup>*</sup></span>
+								<div class="input-in">
+									<input type="text" placeholder=""
+										required
+										data-parsley-required>
+									<span class="focus-border"></span>
+									<span class="input-note">Например, +79169991100</span>
+								</div>
+							</div>
+						</label>
+					</div>
+
+					<div class="form-row flex-row">
+						<label class="col-xs">
+							<div class="input">
+								<span class="input-label">Адрес<sup>*</sup></span>
+								<div class="input-in">
+									<input type="text" placeholder=""
+										required
+										data-parsley-required>
+									<span class="focus-border"></span>
+									<span class="input-note">Пожалуйста, укажите свой адрес, начиная с города, например: г.&nbsp;Москва,&nbsp;ул.&nbsp;Елецкая,&nbsp;2</span>
+								</div>
+							</div>
+						</label>
+					</div>
+
+					<div class="form-row flex-row">
+						<label class="col-xs">
+							<div class="input">
+								<span class="input-label">Сайт</span>
+								<div class="input-in">
+									<input type="text" placeholder="">
+									<span class="focus-border"></span>
+									<span class="input-note">Например, mysite.ru</span>
+								</div>
+							</div>
+						</label>
+					</div>
+				</div>
+
+				<div class="reg-form-step" style="display: none;">
+					<div class="form-row flex-row">
+						<label class="col-xs">
+							<div class="input">
+								<span class="input-label">Фамилия<sup>*</sup></span>
+								<div class="input-in">
+									<input type="text" placeholder=""
+										required
+										data-parsley-required>
+									<span class="focus-border"></span>
+									<span class="input-note"></span>
+								</div>
+							</div>
+						</label>
+					</div>
+
+					<div class="form-row flex-row">
+						<label class="col-xs">
+							<div class="input">
+								<span class="input-label">Имя<sup>*</sup></span>
+								<div class="input-in">
+									<input type="text" placeholder=""
+										required
+										data-parsley-required>
+									<span class="focus-border"></span>
+									<span class="input-note"></span>
+								</div>
+							</div>
+						</label>
+					</div>
+
+					<div class="form-row flex-row">
+						<label class="col-xs">
+							<div class="input">
+								<span class="input-label">Отчество<sup>*</sup></span>
+								<div class="input-in">
+									<input type="text" placeholder=""
+										required
+										data-parsley-required>
+									<span class="focus-border"></span>
+									<span class="input-note"></span>
+								</div>
+							</div>
+						</label>
+					</div>
+
+					<div class="form-row flex-row">
+						<label class="col-xs">
+							<div class="input">
+								<span class="input-label">Телефон<sup>*</sup></span>
+								<div class="input-in">
+									<input type="text" placeholder=""
+										required
+										data-parsley-required>
+									<span class="focus-border"></span>
+									<span class="input-note"></span>
+								</div>
+							</div>
+						</label>
+					</div>
+
+					<div class="form-row flex-row">
+						<label class="col-xs">
+							<div class="input">
+								<span class="input-label">Должность<sup>*</sup></span>
+								<div class="input-in">
+									<input type="text" placeholder=""
+										required
+										data-parsley-required>
+									<span class="focus-border"></span>
+									<span class="input-note"></span>
+								</div>
+							</div>
+						</label>
+					</div>
+
+					<div class="form-row flex-row">
+						<label class="col-xs">
+							<div class="input">
+								<span class="input-label">E-mail (Логин)<sup>*</sup></span>
+								<div class="input-in">
+									<input type="email" placeholder=""
+										required
+										data-parsley-required>
+									<span class="focus-border"></span>
+									<span class="input-note"></span>
+								</div>
+							</div>
+						</label>
+					</div>
+				</div>
+
+				<div class="reg-form-step" style="display: none;">
+					<div class="form-row flex-row">
+						<div class="col-xs">
+							<div class="input">
+								<span class="input-label">Услуги (выбрать из списка)<sup>*</sup></span>
+								<select data-multiple multiple
+									required
+									data-parsley-required>
+									<option value="" placeholder>Выберите страну</option>
+									<option value="Проектирование">Проектирование</option>
+									<option value="Дизайн">Дизайн</option>
+									<option value="Фронтенд">Фронтенд</option>
+									<option value="Бекенд">Бекенд</option>
+									<option value="Наполнение контентом">Наполнение контентом</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-row flex-row">
+						<label class="col-xs">
+							<div class="input">
+								<span class="input-label">Услуги (если нет в списке)</span>
+								<div class="input-in">
+									<input type="text" data-editable placeholder="">
+									<span class="focus-border"></span>
+									<span class="input-note"></span>
+								</div>
+							</div>
+						</label>
+					</div>
+
+					<div class="form-row flex-row">
+						<div class="col-xs">
+							<div class="input">
+								<span class="input-label">Где оказываете услуги<sup>*</sup></span>
+								<select data-multiple multiple
+									required
+									data-parsley-required>
+									<option value="" placeholder>Выберите страну</option>
+									<option value="Беларусь">Беларусь</option>
+									<option value="Россия">Россия</option>
+									<option value="Украина">Украина</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="reg-form-step" style="display: none;">
+					<div class="form-row flex-row">
+						<label class="col-xs">
+							<div class="input">
+								<span class="input-label">Пароль<sup>*</sup></span>
+								<div class="input-in">
+									<input type="password" placeholder="" autocomplete="off" id="reg_pwd_1" required data-parsley-required data-parsley-min-length="6">
+									<span class="focus-border"></span>
+									<span class="input-note"></span>
+								</div>
+							</div>
+						</label>
+					</div>
+
+					<div class="form-row flex-row">
+						<label class="col-xs">
+							<div class="input">
+								<span class="input-label">Повторите пароль<sup>*</sup></span>
+								<div class="input-in">
+									<input type="password" placeholder="" autocomplete="off" id="reg_pwd_2" required data-parsley-required data-parsley-equalto="#reg_pwd_1">
+									<span class="focus-border"></span>
+									<span class="input-note"></span>
+								</div>
+							</div>
+						</label>
+					</div>
+				</div>
+
+				<div class="form-navigation">
+					<div class="form-row flex-row">
+						<div class="col-xs-6 col-sm start-xs js-reg-prev">
+							<button class="button button--black button--big button--arrow-back"><span>Назад</span></button>
+						</div>
+						<div class="col-xs-6 col-sm end-xs js-reg-next">
+							<button class="button button--bgred button--big button--arrow"><span>Далее</span></button>
+						</div>
+						<div class="col-xs-6 col-sm end-xs js-reg-submit">
+							<input type="submit" class="button button--bgred button--big" value="Готово">
+						</div>
+					</div>
+				</div>
+
+			</form>
+
+			<div class="reg-form js-reg-form-success" style="display: none;">
+				<div class="usercontent">
+					<h2>Спасибо!</h2>
+					<p>Вы успешно зарегистрированы. Посмотрите наш <a href="catalog-entry.html">Каталог</a> или почитайте наши <a href="news.html">Новости</a>.</p>
+				</div>
+			</div>
+
+			<div class="reg-form js-reg-form-error" style="display: none;">
+				<div class="usercontent">
+					<h2>О нет!</h2>
+					<p>Что-то пошло не так.</p>
+				</div>
+			</div>
+
+		</section>
+
+	</div>
+
+	//= partials/footer-inner.html
+
+	//= partials/sidebar.html
+
+	//= partials/popup.html
+
+	//= partials/scripts.html
+</body>
+</html>

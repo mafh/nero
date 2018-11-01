@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+//= partials/head.html
+<body>
+	<script>
+		document.body.className += ' js';
+	</script>
+	<div class="page-wrap">
+
+		//= partials/header-inner.html
+
+		<div class="content-title-block">
+			<img src="userimg/title-1.jpg" alt="">
+			<div class="backnav backnav--white">
+				<ul>
+					<li><a href="#">Nero</a></li>
+					<li><a href="#">Личные данные</a></li>
+				</ul>
+			</div>
+			<h1>Личные данные</h1>
+		</div>
+
+		<div class="tabs-row tabs-row--border">
+			<a href="personal-basket.html">
+				<span>Корзина</span>
+			</a>
+			<a href="personal-history.html">
+				<span>История заказов</span>
+			</a>
+			<a href="personal-data.html" class="tabs-item--active">
+				<span>Личные данные</span>
+			</a>
+		</div>
+
+		<div class="maxwrap">
+
+			<form action="" class="usercontent wrap-content personal-data js-personal-data bg--white">
+				<div class="flex-row flex-row-padding">
+
+					<div class="col-xs-12 col-sm-12 col-md-6">
+						<div class="field-editable js-editable personal-item">
+							<label class="personal-label">Имя:</label>
+							<div class="personal-input"><input type="text" name="personal-name" value="Василий"></div>
+							<div class="field-editable-save"><svg viewBox="0 0 24 24"><use xlink:href="#ico-check-2"></use></svg></div>
+						</div>
+						<div class="field-editable js-editable personal-item">
+							<label class="personal-label">Фамилия:</label>
+							<div class="personal-input"><input type="text" name="personal-sname" value="Дачников"></div>
+							<div class="field-editable-save"><svg viewBox="0 0 24 24"><use xlink:href="#ico-check-2"></use></svg></div>
+						</div>
+						<div class="field-editable js-editable personal-item">
+							<label class="personal-label">Город:</label>
+							<div class="personal-input"><input type="text" name="personal-city" value="Гродно"></div>
+							<div class="field-editable-save"><svg viewBox="0 0 24 24"><use xlink:href="#ico-check-2"></use></svg></div>
+						</div>
+						<div class="field-editable js-editable personal-item">
+							<label class="personal-label">E-mail:</label>
+							<div class="personal-input"><input type="email" name="personal-email" value="v.dachnikov@tut.by"></div>
+							<div class="field-editable-save"><svg viewBox="0 0 24 24"><use xlink:href="#ico-check-2"></use></svg></div>
+						</div>
+						<div class="field-wrapable personal-item">
+							<label class="personal-label">Пароль:</label>
+							<div class="personal-input">
+								<a href="#pwd-change" class="js-popup-open ico-link color--red">
+									<svg viewBox="0 0 32 32">
+										<use xlink:href="#ico-lock"></use>
+									</svg>
+									<span>Изменить пароль</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="personal-item personal-info-header">
+							Ваша скидка
+						</div>
+
+						<div class="personal-item">
+							<label class="personal-label label-off">Базовая:</label>
+							<div class="personal-input"><span class="bg--red outline--red">5%</span></div>
+						</div>
+						<div class="personal-item">
+							<label class="personal-label label-off">Накопительная:</label>
+							<div class="personal-input"><span class="bg--red outline--red">7%</span></div>
+						</div>
+						<div class="personal-item">
+							<label class="personal-label label-off">Общая:</label>
+							<div class="personal-input"><span class="bg--red outline--red">13%</span></div>
+						</div>
+					</div>
+
+
+					<script type="x-template" id="pwd-change">
+						<div class="usercontent popup-content">
+							<div class="popup-content-head">
+								<h2 class="align-center">Смена пароля</h2>
+							</div>
+							<div class="flex-row form-row flex-row-padding">
+								<div class="col-xs-12">
+									<div class="input">
+										<span class="input-label">Пароль:</span>
+										<input type="password">
+									</div>
+								</div>
+								<div class="col-xs-12">
+									<div class="input">
+										<span class="input-label">Пароль еще раз:</span>
+										<input type="password">
+									</div>
+								</div>
+								<div class="col-xs-12 end-xs">
+									<a href="#" class="button button--big button--bgred">Сохранить</a>
+								</div>
+							</div>
+						</div>
+					</script>
+
+
+					<div class="col-xs-12 col-sm-12 col-md-6">
+						<div class="field-editable js-editable personal-item">
+							<label class="personal-label">Название <br>компании:</label>
+							<div class="personal-input"><input type="text" name="personal-oooname" value="Сад и огород Inc"></div>
+							<div class="field-editable-save"><svg viewBox="0 0 24 24"><use xlink:href="#ico-check-2"></use></svg></div>
+						</div>
+						<div class="field-editable js-editable personal-item">
+							<label class="personal-label">КПП:</label>
+							<div class="personal-input"><input type="text" name="personal-kpp" value="4359842356"></div>
+							<div class="field-editable-save"><svg viewBox="0 0 24 24"><use xlink:href="#ico-check-2"></use></svg></div>
+						</div>
+						<div class="field-editable js-editable personal-item">
+							<label class="personal-label">Юр. Адрес:</label>
+							<div class="personal-input"><input type="text" name="personal-uadress" value="Можайское шоссе, д. 431"></div>
+							<div class="field-editable-save"><svg viewBox="0 0 24 24"><use xlink:href="#ico-check-2"></use></svg></div>
+						</div>
+						<div class="field-editable js-editable personal-item">
+							<label class="personal-label">В банке:</label>
+							<div class="personal-input"><input type="text" name="personal-bank" value="Альфа-Банк"></div>
+							<div class="field-editable-save"><svg viewBox="0 0 24 24"><use xlink:href="#ico-check-2"></use></svg></div>
+						</div>
+						<div class="field-editable js-editable personal-item">
+							<label class="personal-label">Swift:</label>
+							<div class="personal-input"><input type="text" name="personal-swift" value="AFB37529"></div>
+							<div class="field-editable-save"><svg viewBox="0 0 24 24"><use xlink:href="#ico-check-2"></use></svg></div>
+						</div>
+						<div class="field-editable js-editable personal-item">
+							<label class="personal-label">Поле:</label>
+							<div class="personal-input"><input type="text" name="personal-field" value="Чистое"></div>
+							<div class="field-editable-save"><svg viewBox="0 0 24 24"><use xlink:href="#ico-check-2"></use></svg></div>
+						</div>
+						<div class="field-editable js-editable personal-item">
+							<label class="personal-label">Погода:</label>
+							<div class="personal-input"><input type="text" name="personal-field" value="Ясная"></div>
+							<div class="field-editable-save"><svg viewBox="0 0 24 24"><use xlink:href="#ico-check-2"></use></svg></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="flex-row flex-row-padding personal-data-footer">
+					<div class="col-xxs-12 col-xs-6">
+						<div class="note-edited">
+							<p class="color--red">* Есть несохраненные изменения</p>
+						</div>
+					</div>
+					<div class="col-xxs-12 col-xs-6 end-xs">
+						<button class="button button--bgred button--big js-button-save" disabled>Сохранить</button>
+					</div>
+				</div>
+			</form>
+
+		</div>
+
+	</div>
+
+	//= partials/footer-inner.html
+
+	//= partials/sidebar.html
+
+	//= partials/popup.html
+
+	//= partials/scripts.html
+</body>
+</html>

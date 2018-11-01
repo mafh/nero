@@ -1,0 +1,58 @@
+<div class="cu-form-wrap">
+	<form action="./contact-form.php" class="cu-form js-cu-form">
+
+		<div class="form-row flex-row form-header">
+			<div class="col-xs center-xs">
+				Обратная связь
+			</div>
+		</div>
+
+		<div class="form-row flex-row">
+			<div class="col-xs">
+				<select name="category" id="" data-select>
+					<option placeholder>Выберите категорию</option>
+					<option value="Запрос">Запрос</option>
+					<option value="Предложение">Предложение</option>
+					<option value="Жалоба">Жалоба</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-row flex-row">
+			<div class="col-xs">
+				<input type="text" placeholder="Имя" name="name">
+			</div>
+		</div>
+
+		<div class="form-row flex-row">
+			<div class="col-xs">
+				<input type="text" placeholder="Телефон" name="phone" required>
+				<div class="input-required-tip">*</div>
+			</div>
+			<div class="col-xs">
+				<input type="email" placeholder="Email" name="email" required>
+				<div class="input-required-tip">*</div>
+			</div>
+		</div>
+
+		<div class="form-row flex-row">
+			<div class="col-xs">
+				<textarea placeholder="Сообщение" name="message"></textarea>
+			</div>
+		</div>
+
+		<div class="form-row flex-row flex-row-padding form-footer">
+			<div class="col-xs-12 center-xs">
+				<a href="#" class="js-cu-form-submit button button--big button--white button-hover--bgblack">Отправить</a>
+			</div>
+			<div class="col-xs-12 center-xs">
+				<div class="tip color--white">* Поля обязательные для заполнения</div>
+			</div>
+		</div>
+
+	</form>
+
+	<div class="cu-form-success">
+		Спасибо! Ваше сообщение отправлено.
+	</div>
+</div>

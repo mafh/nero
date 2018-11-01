@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+//= partials/head.html
+<body>
+	<script>
+		document.body.className += ' js';
+	</script>
+	<div class="page-wrap">
+
+		//= partials/header-inner.html
+
+		<div class="content-title-block">
+			<img src="userimg/title-1.jpg" alt="">
+			<div class="backnav backnav--white">
+				<ul>
+					<li><a href="#">Nero</a></li>
+					<li><a href="#">Личные данные</a></li>
+				</ul>
+			</div>
+			<h1>Личные данные</h1>
+		</div>
+
+		<div class="tabs-row tabs-row--border">
+			<a href="personal-basket.html">
+				<span>Корзина</span>
+			</a>
+			<a href="personal-history.html" class="tabs-item--active">
+				<span>История заказов</span>
+			</a>
+			<a href="personal-data.html">
+				<span>Личные данные</span>
+			</a>
+		</div>
+
+		<div class="maxwrap">
+			<div action="" class="usercontent personal-history js-personal-history">
+
+				<div class="personal-history-wrap bg--white">
+
+					<div class="personal-history-head">
+						<div class="p-head-node">Дата</div>
+						<div class="p-head-node">Статус заказа</div>
+						<div class="p-head-node">Сумма</div>
+					</div>
+
+					<div class="personal-basket-item">
+						<div class="personal-history-item js-history-head">
+							<div class="p-item-node"><a href="#" class="js-history-toggle js-history-toggle dotted color--black"><span>1 сентября 2018</span></a></div>
+							<div class="p-item-node">Принят</div>
+							<div class="p-item-node">
+								<div class="basket-item-price align-left">
+									<span>300</span>
+									<sup>руб.</sup>
+								</div>
+							</div>
+						</div>
+						<div class="basket-wrap js-history-content" style="display: none;">
+							<div class="basket">
+								<div class="basket-head bg--grey">
+									<div class="b-head-node">Наименование</div>
+									<div class="b-head-node">Цвет</div>
+									<div class="b-head-node">Цена</div>
+									<div class="b-head-node">Кол-во</div>
+									<div class="b-head-node">Сумма</div>
+									<div class="b-head-node"></div>
+								</div>
+								<div class="basket-body bg--grey">
+									<div class="basket-item">
+										<div class="b-item-node">
+											<a href="#" class="basket-device">
+												<div class="basket-device-img">
+													<img class="lozad" data-src="userimg/device-1.png" alt="">
+												</div>
+												<div class="basket-device-txt">
+													<div class="basket-device-title">Исполнительное устройство Logo 8213-1000 с СК</div>
+												</div>
+											</a>
+										</div>
+										<div class="b-item-node">
+											<div class="device-color" style="background-color: #000;"></div>
+										</div>
+										<div class="b-item-node">
+											<div class="basket-item-price">
+												<span>300</span>
+												<sup>руб.</sup>
+											</div>
+											<div class="basket-item-price-old">
+												<span>399</span>
+												<sup>руб.</sup>
+											</div>
+										</div>
+										<div class="b-item-node">
+											2
+										</div>
+										<div class="b-item-node">
+											<div class="basket-item-price">
+												<span>600</span>
+												<sup>руб.</sup>
+											</div>
+										</div>
+										<div class="b-item-node">
+											<div class="basket-item-remove">
+												<svg class="ico-close" viewBox="0 0 32 32">
+													<use xlink:href="#ico-close"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+									<div class="basket-item">
+										<div class="b-item-node">
+											<a href="#" class="basket-device">
+												<div class="basket-device-img">
+													<img class="lozad" data-src="userimg/product-3.jpg" alt="">
+												</div>
+												<div class="basket-device-txt">
+													<div class="basket-device-title">Исполнительное устройство Logo 8213-1000 с СК</div>
+												</div>
+											</a>
+										</div>
+										<div class="b-item-node">
+											<div class="device-color" style="background-color: #c3143c;"></div>
+										</div>
+										<div class="b-item-node">
+											<div class="basket-item-price">
+												<span>300</span>
+												<sup>руб.</sup>
+											</div>
+											<div class="basket-item-price-old">
+												<span>399</span>
+												<sup>руб.</sup>
+											</div>
+										</div>
+										<div class="b-item-node">
+											1
+										</div>
+										<div class="b-item-node">
+											<div class="basket-item-price">
+												<span>300</span>
+												<sup>руб.</sup>
+											</div>
+										</div>
+										<div class="b-item-node">
+											<div class="basket-item-remove">
+												<svg class="ico-close" viewBox="0 0 32 32">
+													<use xlink:href="#ico-close"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="personal-basket-item">
+						<div class="personal-history-item js-history-head">
+							<div class="p-item-node"><a href="#" class="js-history-toggle dotted color--black"><span>26 августа 2018</span></a></div>
+							<div class="p-item-node">Принят</div>
+							<div class="p-item-node">
+								<div class="basket-item-price align-left">
+									<span>300</span>
+									<sup>руб.</sup>
+								</div>
+							</div>
+						</div>
+						<div class="basket-wrap js-history-content" style="display: none;">
+							<div class="basket">
+								<div class="basket-head bg--grey">
+									<div class="b-head-node">Наименование</div>
+									<div class="b-head-node">Цвет</div>
+									<div class="b-head-node">Цена</div>
+									<div class="b-head-node">Кол-во</div>
+									<div class="b-head-node">Сумма</div>
+									<div class="b-head-node"></div>
+								</div>
+								<div class="basket-body bg--grey">
+
+									<div class="basket-item">
+										<div class="b-item-node">
+											<a href="#" class="basket-device">
+												<div class="basket-device-img">
+													<img class="lozad" data-src="userimg/pult3.png" alt="">
+												</div>
+												<div class="basket-device-txt">
+													<div class="basket-device-title">Исполнительное устройство Logo 8213-1000 с СК</div>
+												</div>
+											</a>
+										</div>
+										<div class="b-item-node">
+											<div class="device-color" style="background-color: #c3143c;"></div>
+										</div>
+										<div class="b-item-node">
+											<div class="basket-item-price">
+												<span>1 300</span>
+												<sup>руб.</sup>
+											</div>
+											<div class="basket-item-price-old">
+												<span>1 399</span>
+												<sup>руб.</sup>
+											</div>
+										</div>
+										<div class="b-item-node">
+											1
+										</div>
+										<div class="b-item-node">
+											<div class="basket-item-price">
+												<span>1 300</span>
+												<sup>руб.</sup>
+											</div>
+										</div>
+										<div class="b-item-node">
+											<div class="basket-item-remove">
+												<svg class="ico-close" viewBox="0 0 32 32">
+													<use xlink:href="#ico-close"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="personal-basket-item">
+						<div class="personal-history-item js-history-head">
+							<div class="p-item-node"><a href="#" class="js-history-toggle dotted color--black"><span>26 августа 2018</span></a></div>
+							<div class="p-item-node">Принят</div>
+							<div class="p-item-node">
+								<div class="basket-item-price align-left">
+									<span>300</span>
+									<sup>руб.</sup>
+								</div>
+							</div>
+						</div>
+						<div class="basket-wrap js-history-content" style="display: none;">
+							<div class="basket">
+								<div class="basket-head bg--grey">
+									<div class="b-head-node">Наименование</div>
+									<div class="b-head-node">Цвет</div>
+									<div class="b-head-node">Цена</div>
+									<div class="b-head-node">Кол-во</div>
+									<div class="b-head-node">Сумма</div>
+									<div class="b-head-node"></div>
+								</div>
+								<div class="basket-body bg--grey">
+
+									<div class="basket-item">
+										<div class="b-item-node">
+											<a href="#" class="basket-device">
+												<div class="basket-device-img">
+													<img class="lozad" data-src="userimg/pult3.png" alt="">
+												</div>
+												<div class="basket-device-txt">
+													<div class="basket-device-title">Исполнительное устройство Logo 8213-1000 с СК</div>
+												</div>
+											</a>
+										</div>
+										<div class="b-item-node">
+											<div class="device-color" style="background-color: #c3143c;"></div>
+										</div>
+										<div class="b-item-node">
+											<div class="basket-item-price">
+												<span>1 300</span>
+												<sup>руб.</sup>
+											</div>
+											<div class="basket-item-price-old">
+												<span>1 399</span>
+												<sup>руб.</sup>
+											</div>
+										</div>
+										<div class="b-item-node">
+											1
+										</div>
+										<div class="b-item-node">
+											<div class="basket-item-price">
+												<span>1 300</span>
+												<sup>руб.</sup>
+											</div>
+										</div>
+										<div class="b-item-node">
+											<div class="basket-item-remove">
+												<svg class="ico-close" viewBox="0 0 32 32">
+													<use xlink:href="#ico-close"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="personal-history-foot">
+					Общая сумма всех заказов: <b>1 236.20</b>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	//= partials/footer-inner.html
+
+	//= partials/sidebar.html
+
+	//= partials/popup.html
+
+	//= partials/scripts.html
+</body>
+</html>

@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+//= partials/head.html
+<body>
+	<script>
+		document.body.className += ' js';
+	</script>
+	<div class="page-wrap">
+
+		//= partials/header-inner.html
+
+		<div class="js-contact-app">
+
+			<div class="content-title-block">
+
+				<img src="userimg/contact-1.jpg" alt="">
+
+				<div class="bc-txt-wrap">
+
+					<div class="backnav backnav--white">
+						<ul>
+							<li><a href="#">Nero</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+
+					<div class="usercontent js-bc-top">
+
+						<h1>Контакты</h1>
+
+						<div class="bc-txt-details flex-row top-xs">
+							<div class="col-xs-12 col-sm col">
+
+								<div class="bc-select">
+									<select data-select>
+										<option value="1">Москва</option>
+										<option value="2">Санкт Петербург</option>
+										<option value="3">Минск</option>
+									</select>
+								</div>
+
+								<h2>Головной офис и производство</h2>
+								<p>223016, Республика Беларусь, СЭЗ "Минск", Минская обл., Минский р-н, Новодворский с/с, 74 район д. Королищевичи </p>
+								<a href="#" class="ico-link link-small is-hidden js-top-route-open">
+									<svg class="ico-placemark" viewBox="0 0 300 300">
+										<use xlink:href="#ico-placemark"></use>
+									</svg>
+									<span>Как проехать</span>
+								</a>
+							</div>
+							<div class="col-xs-12 col-sm col">
+								<div class="list-ico-links">
+									<p>
+										<a href="tel:+375173885300" class="ico-link link-shift">
+											<svg class="ico-24" viewBox="0 0 505.8 493.9">
+												<use xlink:href="#ico-phone"></use>
+											</svg>
+											<span>+375 (17) 388-53-00</span>
+										</a>
+									</p>
+									<p>
+										<a href="tel:+375173885300" class="ico-link link-shift">
+											<svg class="ico-24" viewBox="0 0 595.2 541.5">
+												<use xlink:href="#ico-fax"></use>
+											</svg>
+											<span>+375 (17) 388-53-01</span>
+										</a>
+									</p>
+									<p>
+										<a href="mailto:info@neroelectronics.by" class="ico-link link-shift">
+											<svg class="ico-24" viewBox="0 0 485.1 299">
+												<use xlink:href="#ico-mail"></use>
+											</svg>
+											<span>info@neroelectronics.by</span>
+										</a>
+									</p>
+								</div>
+
+								<div class="b-phone-descride">
+									<p>Горячая линия технической поддержки дилеров&nbsp;в&nbsp;РБ</p>
+									<h4>+375 (29) 610-12-53</h4>
+								</div>
+
+								<div class="b-phone-descride">
+									<p>Горячая линия технической поддержки дилеров&nbsp;в&nbsp;РФ</p>
+									<h4>8-800-500-09-30</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h3 class="bc-txt-show js-bc-view-toggle"><a href="#">Вернуться<br>к контактам</a></h3>
+
+				</div>
+
+				<div class="bc-map-wrap">
+
+					<div class="bc-map" id="contact_map"></div>
+
+					<h3 class="bc-map-show js-bc-view-toggle"><a href="#">Посмотреть<br>карту</a></h3>
+
+				</div>
+
+				<script>
+					var ctPos = [53.807228, 27.692027];
+				</script>
+
+				<div class="godown js-goto" data-goto="#screen-2" data-shift="true">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+						<path d="M256 298.3l174.2-167.2c4.3-4.2 11.4-4.1 15.8.2l30.6 29.9c4.4 4.3 4.5 11.3.2 15.5L264.1 380.9c-2.2 2.2-5.2 3.2-8.1 3-3 .1-5.9-.9-8.1-3L35.2 176.7c-4.3-4.2-4.2-11.2.2-15.5L66 131.3c4.4-4.3 11.5-4.4 15.8-.2L256 298.3z"/>
+					</svg>
+				</div>
+			</div>
+
+			<script id="card-map" type="text/x-jquery-tmpl">
+				<!-- cardDirectionsIframe -->
+			</script>
+
+			<div class="wrap" id="screen-2">
+				<div class="cards flex-row">
+
+					<div class="col-xs-12 col-sm-6">
+						<div class="card">
+							<div class="card-title">Представительство в Республике Беларусь</div>
+							<p class="card-name">ООО «Скетч»</p>
+							<p>ул.Скрыганова, 2б, оф.306</p>
+							<div class="card-location">
+								<p>
+									<a href="#card-map" data-pos="53.8078882,27.6886575" class="ico-link link-small is-hidden js-card-route-open">
+										<svg class="ico-placemark" viewBox="0 0 300 300">
+											<use xlink:href="#ico-placemark"></use>
+										</svg>
+										<span>Как проехать</span>
+									</a>
+									<a href="#card-map" data-pos="53.8078882,27.6886575" class="ico-link link-small js-card-map-open">
+										<svg class="ico-placemark" viewBox="0 0 300 300">
+											<use xlink:href="#ico-placemark"></use>
+										</svg>
+										<span>На карте</span>
+									</a>
+								</p>
+							</div>
+							<div class="card-contacts">
+								Тел.: <b>+375 (17) 317-02-32</b><br>
+								Тел.: <b>+375 (29) 609-25-59</b><br>
+								Эл. почта: <a href="mailto:marketing@sketch.by">marketing@sketch.by</a><br><br>
+								<b>Время работы:</b> 9:00 - 18:00, пн-пт
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-6">
+						<div class="card">
+							<div class="card-title">Шоу-рум умного дома в Минске</div>
+							<p class="card-name">ООО «Скетч»</p>
+							<p>ул.Скрыганова, 2б, оф.306</p>
+							<div class="card-location">
+								<p>
+									<a href="#card-map" data-pos="53.9085854,27.5166884" class="ico-link link-small is-hidden js-card-route-open">
+										<svg class="ico-placemark" viewBox="0 0 300 300">
+											<use xlink:href="#ico-placemark"></use>
+										</svg>
+										<span>Как проехать</span>
+									</a>
+									<a href="#card-map" data-pos="53.9085854,27.5166884" class="ico-link link-small js-card-map-open">
+										<svg class="ico-placemark" viewBox="0 0 300 300">
+											<use xlink:href="#ico-placemark"></use>
+										</svg>
+										<span>На карте</span>
+									</a>
+								</p>
+							</div>
+							<div class="card-contacts">
+								Тел.: <b>+375 (17) 317-02-33</b><br>
+								Тел.: <b>8-200-49-100-32</b><br>
+								Эл. почта: <a href="mailto:info@nero-home.by">info@nero-home.by</a><br><br>
+								<b>Время работы:</b> 9:00 - 18:00, пн-пт
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-6">
+						<div class="card">
+							<div class="card-title">Представительство в Москве</div>
+							<p class="card-name">ООО «СкетчНероГрупп»</p>
+							<p>ул. Б. Очаковская, д.15, стр.1, г. Москва, Россия, 119361</p>
+							<div class="card-location">
+								<p>
+									<a href="#card-map" data-pos="55.682965,37.4555403" class="ico-link link-small is-hidden js-card-route-open">
+										<svg class="ico-placemark" viewBox="0 0 300 300">
+											<use xlink:href="#ico-placemark"></use>
+										</svg>
+										<span>Как проехать</span>
+									</a>
+									<a href="#card-map" data-pos="55.682965,37.4555403"  class="ico-link link-small js-card-map-open">
+										<svg class="ico-placemark" viewBox="0 0 300 300">
+											<use xlink:href="#ico-placemark"></use>
+										</svg>
+										<span>На карте</span>
+									</a>
+								</p>
+							</div>
+							<div class="card-contacts">
+								Тел.: <b>+7 (495) 430-79-60</b><br>
+								Тел.: <b>+7 (495) 735-64-47</b><br>
+								Тел.: <b>+7 (495) 735-66-58</b><br>
+								Эл. почта: <a href="mailto:info@nerosk.ru">info@nerosk.ru</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-6">
+						<div class="card">
+							<div class="card-title">Шоу-рум умного дома в Москве</div>
+							<p class="card-name">ООО «Изитек»</p>
+							<p>ул.Староалексеевская, д.5, пом.102</p>
+							<div class="card-location">
+								<p>
+									<a href="#card-map" data-pos="55.8104563,37.6429073" class="ico-link link-small is-hidden js-card-route-open">
+										<svg class="ico-placemark" viewBox="0 0 300 300">
+											<use xlink:href="#ico-placemark"></use>
+										</svg>
+										<span>Как проехать</span>
+									</a>
+									<a href="#card-map" data-pos="55.8104563,37.6429073" class="ico-link link-small js-card-map-open">
+										<svg class="ico-placemark" viewBox="0 0 300 300">
+											<use xlink:href="#ico-placemark"></use>
+										</svg>
+										<span>На карте</span>
+									</a>
+								</p>
+							</div>
+							<div class="card-contacts">
+								Тел.: <b>+7 (499) 322-95-08</b><br>
+								Тел.: <b>+7 (966) 020-97-09</b><br>
+								Эл. почта: <a href="mailto:info@nero-home.ru">info@nero-home.ru</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-6">
+						<div class="card">
+							<div class="card-title">Представительство в Санкт-Петербурге</div>
+							<p class="card-name">ООО «Неро СПб»</p>
+							<p>Ул. Комсомола, д. 14, корп. 2 г. Санкт-Петербург, Россия, 195009</p>
+							<div class="card-location">
+								<p>
+									<a href="#card-map" data-pos="59.9539577,30.3557753" class="ico-link link-small is-hidden js-card-route-open">
+										<svg class="ico-placemark" viewBox="0 0 300 300">
+											<use xlink:href="#ico-placemark"></use>
+										</svg>
+										<span>Как проехать</span>
+									</a>
+									<a href="#card-map" data-pos="59.9539577,30.3557753" class="ico-link link-small js-card-map-open">
+										<svg class="ico-placemark" viewBox="0 0 300 300">
+											<use xlink:href="#ico-placemark"></use>
+										</svg>
+										<span>На карте</span>
+									</a>
+								</p>
+							</div>
+							<div class="card-contacts">
+								Тел.: <b>+7 (812) 987-51-56</b><br>
+								Тел.: <b>+7 (981) 757-90-45</b><br>
+								Эл. почта: <a href="mailto:nero-spb@neroelectronics.by">nero-spb@neroelectronics.by</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-6">
+						<div class="card">
+							<div class="card-title">Представительство в Украине</div>
+							<p class="card-name">ООО «Умные решения»</p>
+							<p>ул. Смольная, 9Б, г. Киев, Украина, 03138</p>
+							<div class="card-location">
+								<p>
+									<a href="#card-map" data-pos="50.3964644,30.4732316" class="ico-link link-small is-hidden js-card-route-open">
+										<svg class="ico-placemark" viewBox="0 0 300 300">
+											<use xlink:href="#ico-placemark"></use>
+										</svg>
+										<span>Как проехать</span>
+									</a>
+									<a href="#card-map" data-pos="50.3964644,30.4732316" class="ico-link link-small js-card-map-open">
+										<svg class="ico-placemark" viewBox="0 0 300 300">
+											<use xlink:href="#ico-placemark"></use>
+										</svg>
+										<span>На карте</span>
+									</a>
+								</p>
+							</div>
+							<div class="card-contacts">
+								Тел.: <b>+380 (44) 500-18-55</b><br>
+								Тел.: <b>+380 (67) 679-51-22</b><br>
+								Эл. почта: <a href="mailto:o.ladyga@neroelectronics.by">o.ladyga@neroelectronics.by</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		//= partials/form-contactus.html
+
+	</div>
+
+	//= partials/footer-inner.html
+
+	//= partials/sidebar.html
+
+	//= partials/popup.html
+
+	//= partials/scripts.html
+</body>
+</html>
